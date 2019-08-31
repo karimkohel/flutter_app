@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './product_manager.dart';
+
 void main() {
   runApp(App());
 }
@@ -12,10 +14,7 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text("KK app"),
         ),
-				body: Card(child: Column(children: <Widget>[
-					Image.asset('media/kalilogo.jpg'),
-					Text("Test Text")
-				],),),
+        body: ProductManager(),
       ),
     );
   }
